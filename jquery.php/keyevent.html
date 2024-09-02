@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script> 
+
+$(document).ready(function(){  
+
+    $("input").keydown(function(){  
+
+        $("input").css("background-color", "yellow");  
+
+    });  
+
+    $("input").keyup(function(){  
+
+        $("input").css("background-color", "red");  
+
+    });  
+
+    $("input").focusout(function(){  
+
+        $("input").css("background-color", "blue");  
+
+    });  
+
+});  
+
+</script> 
+
+</head> 
+
+<body> 
+
+Enter your name:<input type=text>
+
+</body> 
+
+</html>

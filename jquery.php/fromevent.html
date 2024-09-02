@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+
+<script> 
+
+$(document).ready(function(){  
+
+    $("input").blur(function(){  
+
+        $("input").css("background-color", "yellow");  
+
+    });
+
+    $("input").focus(function(){  
+
+        $("input").css("background-color", "red");    
+
+    });    
+
+});  
+
+</script> 
+
+</head> 
+
+<body> 
+
+Enter your name: <input type="text"> 
+
+</body> 
+
+</html> 

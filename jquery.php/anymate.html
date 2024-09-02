@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+      $("#btn").click(function(){
+
+        $("#box").animate({
+
+          height: "300px",
+
+          width: "300px"
+
+        }, {
+
+          duration: 5000,
+
+          complete: function(){
+
+          $(this).after("<p>Animation is complete!</p>");
+
+          }
+
+        });
+
+      });
+
+    });
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <button id="btn">Animate height & width</button>
+
+    <div id="box" style="background:#72363656;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+
+</html>

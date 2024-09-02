@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+
+<script> 
+
+    $(document).ready(function(){  
+
+        $("p").mouseover(function(){  
+
+            $("p").html("Mouse roaming");
+
+            $("p").css("background-color","pink")
+
+        });  
+
+        $("p").mouseleave(function(){  
+
+            $("p").html("Mouse leaved");
+
+            $("p").css("background-color","cyan")
+
+        });    
+
+        $("p").mousedown(function(){  
+
+            $("p").html("Mouse clicked");
+
+            $("p").css("background-color","green")
+
+        });  
+
+        $("p").mouseup(function(){  
+
+            $("p").html("Mouse released");
+
+            $("p").css("background-color","blue")
+
+        });
+
+        $("p").dblclick(function(){  
+
+            $("p").html("Mouse double clicked");
+
+            $("p").css("background-color","red")
+
+        });
+
+    });  
+
+    </script> 
+
+</head> 
+
+<body> 
+
+<p>Mouse Event Example.</p> 
+
+</body> 
+
+</html>
